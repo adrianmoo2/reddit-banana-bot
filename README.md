@@ -44,11 +44,11 @@ A Reddit bot that encourages banana lovers and discourages banana haters.
 * Clone the repository locally
 * Create a Reddit account
 * Navigate to https://www.reddit.com/prefs/apps/ and obtain your client_id and secret
-* Update the praw.ini file with your information. Should be in the Python folder under Lib\Site-Packages\praw\praw.ini. Example settings shown:
+* Add the client_id and scret into the praw.ini file. It should be in the Python folder under Lib\Site-Packages\praw\praw.ini. Example settings shown:
 
 ![image](https://user-images.githubusercontent.com/14877762/58928700-6aa1fd80-8708-11e9-8eb0-3b7d17cce700.png)
 
-* Make sure that the application name in the brackets is the same as the one set for Reddit app
+* Make sure that the application name in the brackets is the same as the one set for the Reddit app
 * Run the script using
 ```python
 python reply_post.py
