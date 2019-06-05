@@ -4,11 +4,20 @@ import re
 import os
 import requests
 import json
-
-reddit = praw.Reddit('bananabot')
+import threading
 
 def jdump(json_obj):
     return json.dumps(json_obj.json()['insult'])
+
+def set_interval(func, sec):
+    def func_wrapper():
+        set_interval(func, sec)
+        func()
+    t = threading.Timer(sec, func_wrapper)
+    t.start()
+    return t
+
+reddit = praw.Reddit('bananabot')
 
 if not os.path.isfile("posts_replied_to.txt"):
     posts_replied_to = []
@@ -45,6 +54,7 @@ with open("posts_replied_to", "w") as f:
     with open("posts_replied_to.txt", "w") as f:
         for post_id in posts_replied_to:
             f.write(post_id + "\n")
+
 
 
 
