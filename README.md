@@ -75,8 +75,6 @@ python reply_post.py
 
 * Adrian Tran
 
-*Add a "contributors" section if you've incorporated pull requests.*
-
 ## Errors and bugs
 
 If something is not behaving intuitively, it is a bug and should be reported.
