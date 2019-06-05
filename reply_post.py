@@ -32,7 +32,7 @@ def replyPost():
 
     for submission in subreddit.hot(limit=5):
         if submission.id not in posts_replied_to:
-            if re.search("i love bananas", submission.title, re.IGNORECASE):
+            if re.search("i love banana.*", submission.title, re.IGNORECASE):
                 submission.reply("Adrian says, \"ME TOO!!\"")
                 print("Bot replied to: ", submission.title)
                 posts_replied_to.append(submission.id)
