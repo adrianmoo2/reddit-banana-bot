@@ -36,7 +36,7 @@ def replyPost():
                 submission.reply("Adrian says, \"ME TOO!!\"")
                 print("Bot replied to: ", submission.title)
                 posts_replied_to.append(submission.id)
-            elif re.search('^(I love (?!banana(s)*).+)$', submission.title, re.IGNORECASE):
+            elif re.search('I love (?!banana(s)*).+', submission.title, re.IGNORECASE):
                 response = requests.get('https://insult.mattbas.org/api/insult.json',
                         params = {'who':  submission.author}
                 )
