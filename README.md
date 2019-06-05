@@ -1,6 +1,6 @@
 # Reddit-BananaLover-Bot
 
-A Reddit bot that encourages banana lovers and discourages banana haters.
+A Reddit bot that encourages banana lovers and discourages banana haters. **Bot is not currently web 
 
 ## Languages / Frameworks used
 
@@ -57,10 +57,11 @@ python reply_post.py
 
 ## Usage
 
-* The bot will comment on all posts in the 'BananaLovers' subreddit that contain the phrase "I love ___"
+* The bot will comment on all posts in the 'BananaLovers' subreddit that contain the phrase "I love ___" (regexes)
 * If the blank contains the word "banana", the Bot will encourage the post
 * If the blank does not contain the word "banana", the Bot will discourage the post, and insult the user 
 * The bot saves all post id's it's commented on to a file so as to not duplicate comments
+* The bot has removed all insults including expletives (regexes)
 
 ## Demo
 
