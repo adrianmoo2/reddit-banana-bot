@@ -48,10 +48,10 @@ def replyPost():
                     )
                     json_dump = jdump(response)
                 
-                submission.reply("Adrian says, \"Are you kidding me?! Bananas are way better!!\"\n\n\nAlso, " + json_dump.replace('"', ''))
+                submission.reply("Wait, so you don't like bananas??\"\n\n\n" + json_dump.replace('"', ''))
                 posts_replied_to.append(submission.id)
 
-set_interval(replyPost, 30)
+set_interval(replyPost, 60)
 
 with open("posts_replied_to", "w") as f:
     with open("posts_replied_to.txt", "w") as f:
