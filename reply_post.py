@@ -38,13 +38,14 @@ for submission in subreddit.hot(limit=5):
                 )
                 json_dump = jdump(response)
             
-            submission.reply("Adrian says, \"Are you kidding me?! Bananas are way better!!\"\n\nAlso, " + json_dump)
+            submission.reply("Adrian says, \"Are you kidding me?! Bananas are way better!!\"\n\n\nAlso, " + json_dump.replace('"', ''))
             posts_replied_to.append(submission.id)
 
 with open("posts_replied_to", "w") as f:
     with open("posts_replied_to.txt", "w") as f:
         for post_id in posts_replied_to:
             f.write(post_id + "\n")
+
 
 
 
