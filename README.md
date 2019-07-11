@@ -1,6 +1,6 @@
 # Reddit-BananaLover-Bot
 
-A Reddit bot that encourages banana lovers and discourages banana haters.
+A Reddit bot that encourages banana lovers and discourages banana indifference.
 
 ## Languages / Frameworks used
 
